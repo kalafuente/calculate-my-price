@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware } from 'redux'
 import { combineReducers } from 'redux'
-import { exams } from '../ducks'
+import { costs } from '../ducks'
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { Store } from 'redux'
 import createSagaMiddleware from 'redux-saga'
@@ -12,7 +12,7 @@ import rootSaga from '../sagas'
 function configureStore(initialState = {}): Store {
     const store = createStore(
         combineReducers({
-            exams,
+            costs,
         }),
         initialState,
         composeWithDevTools(

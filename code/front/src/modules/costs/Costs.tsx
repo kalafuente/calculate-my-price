@@ -1,7 +1,7 @@
 import React from "react"
 import Title from "../../components/titles/Title";
 import VariableCostsTable from "./variable-costs-table/VariableCostsTable";
-import { TitleContainer } from "./ExamsStyles";
+import { TitleContainer } from "./CostsStyles";
 
 type VariableCostsProps = {
     rows: number

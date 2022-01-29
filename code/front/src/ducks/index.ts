@@ -11,7 +11,7 @@ export const initState: CalculatePriceState = {
 }
 
 //reducer
-export function exams(state: CalculatePriceState = initState, action: ActionCreator): CalculatePriceState {
+export function costs(state: CalculatePriceState = initState, action: ActionCreator): CalculatePriceState {
     switch (action.type) {
         case SET_COSTS:
             return {

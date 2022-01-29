@@ -9,5 +9,5 @@ export type CalculatePriceState = {
 }
 
 export type StateType = {
-    exams: CalculatePriceState;
+    costs: CalculatePriceState;
 }

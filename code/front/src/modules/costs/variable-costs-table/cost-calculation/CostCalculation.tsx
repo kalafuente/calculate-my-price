@@ -7,6 +7,5 @@ export const CostCalculation = () => {
 
     return <div>
         CostCalculation
-        {costs}
     </div>
 }
