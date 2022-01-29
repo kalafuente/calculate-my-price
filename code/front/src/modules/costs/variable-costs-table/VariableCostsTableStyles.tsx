@@ -4,17 +4,7 @@ import { FontSize, Color, FontWeight } from '../../../components/theme/Theme';
 export const ExamContainer = styled('div') <{}>`
     display: flex;
     align-items: center;
-    @media ${props => props.theme.device.xs.min}{
-        margin: 15px;
-        width: 100%;
-        justify-content: space-between;
-    }
-    @media ${props => props.theme.device.sm.min}{
-        margin-left: 46px;
-    }
-    @media ${props => props.theme.device.lg.min}{
-        justify-content: center;
-      }
+    width: 100%;
 `;
 export const ExamName = styled('div') <{}>`
     display: inline-block;
@@ -32,7 +22,7 @@ export const ExamName = styled('div') <{}>`
     }
 `;
 
-export const ExamButton = styled('div') <{}>`
+export const PriceContainer = styled('div') <{}>`
     display: flex;
     min-width: 230px;
     align-items: center;
@@ -48,6 +38,18 @@ export const ExamButton = styled('div') <{}>`
     }
 `;
 
+export const InputLabelContainer  = styled('div') <{}>`
+    display: flex;
+`;
+
+
+
+export const CurrencySign = styled('div') <{}>`
+    width: 20px;
+    margin-top: 10px;
+    font-size:  ${props => props.theme.fontSize[FontSize.BIGGEST]};
+`;
+
 export const AddRowButton = styled('div') <{}>`
     margin-top: 17px;
     width: 45px;
@@ -60,6 +62,7 @@ export const FinishButton = styled('div') <{}>`
     width: fit-content;
     margin: auto;
     display: flex;
+    padding-top: 30px;
 `;
 
 
@@ -67,19 +70,9 @@ export const Row = styled(Box)`
     display: flex;
     font-weight: ${props => props.theme.fontWeight[FontWeight.SEMIBOLD]};
     font-size:  ${props => props.theme.fontSize[FontSize.BASE]};
-    background: ${props => props.index % 2 === 0 ? props.theme.colors[Color.GRAYLIGHT] : props.theme.colors[Color.WHITE]};
+    background: ${props => props.index % 2 === 0 ? props.theme.colors[Color.WHITE] : props.theme.colors[Color.WHITE]};
   `;
 
-export const NoExam = styled(Box)`
-    margin-top: 21px;
-    display: flex;
-    font-size:  ${props => props.theme.fontSize[FontSize.BASE]};
-    justify-content: center;
-    font-weight: ${props => props.theme.fontWeight[FontWeight.SEMIBOLD]};
-    @media ${props => props.theme.device.xs.max}{
-        margin-top: 15px;
-      }
-`;
 
 export const ButtonContainer = styled('div') <{}>`
     height: 44px;
@@ -87,4 +80,20 @@ export const ButtonContainer = styled('div') <{}>`
     @media ${props => props.theme.device.xl.min}{
        min-width:158px;
     }
+`;
+
+export const StepContainer  = styled('div') <{}>`
+    background: ${props =>  props.theme.colors[Color.WHITE]};
+`;
+
+export const InputWithLabel  = styled('div') <{}>`
+    font-size:  ${props => props.theme.fontSize[FontSize.BASE]};
+    margin-right: 20px;
+`;
+
+
+export const TableContainer  = styled('div') <{}>`
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 `;

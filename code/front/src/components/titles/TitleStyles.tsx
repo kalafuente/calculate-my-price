@@ -5,7 +5,7 @@ export const TitleStyled = styled('h1') <{}>`
   text-align: center;
   font-size:  ${props => props.theme.fontSize[FontSize.JUMBO]};
   font-weight: ${props => props.theme.fontWeight[FontWeight.BOLD]};
-  color:  ${props => props.theme.colors[Color.BLUE]};
+  color:  ${props => props.theme.colors[Color.SECONDARY]};
   font-family: Montserrat;
 `;
 

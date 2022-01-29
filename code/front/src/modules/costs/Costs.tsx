@@ -11,7 +11,7 @@ const VariableCosts: React.FunctionComponent<VariableCostsProps> = ({ rows }) =>
     return (
         <React.Fragment>
             <TitleContainer>
-                <Title title='Costos' />
+                <Title title='Calculá tu precio de venta' />
             </TitleContainer>
             <VariableCostsTable rows={rows} />
         </React.Fragment>

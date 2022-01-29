@@ -3,11 +3,21 @@ export type Cost = {
     price: number
 }
 
-export type CalculatePriceState = {
-    costs: [Cost] | null;
+export type StateType = {
+    costs: Cost[] | null;
     rows: number;
+    result: number;
+    step: STEP;
+    gain: number;
 }
 
-export type StateType = {
-    costs: CalculatePriceState;
+export enum STEP {
+    VARIABLE_COSTS = 'VARIABLE_COSTS',
+    RESULT = 'RESULT',
+    GAIN = 'GAIN',
+    GET_MY_PRICE = 'GET_MY_PRICE'
+}
+
+export type AppStateType ={
+    costs: StateType,
 }

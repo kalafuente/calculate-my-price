@@ -7,15 +7,22 @@ export enum Color {
     SECONDARY = 'secondary',
     WHITE = 'white',
     BLUE = 'blue',
-    GRAYLIGHT = 'gray-light'
+    GRAYLIGHT = 'gray-light',
+    PRIMARYMIDDLE = 'primary-middle',
+    SECONDARYMIDDLE = 'secondary-middle',
+    GREEN = 'green'
 }
 
 const colors = {
-    [Color.SECONDARY]: '#6C8EDB',
-    [Color.PRIMARY]: '#FF8800',
+    [Color.PRIMARYMIDDLE]: '#ffe3b3',
+    [Color.PRIMARY]: '#ffc174',
+    [Color.SECONDARYMIDDLE]: '#64c9a7',
+    [Color.SECONDARY]: '#27798f',
     [Color.WHITE]: '#FFF',
     [Color.GRAYLIGHT]: '#FAFAFA',
-    [Color.BLUE]: '#4d649b',
+    [Color.GREEN]: '#aeeee0',
+    [Color.GREEN]: '#aeeee0',
+
 }
 
 /*
